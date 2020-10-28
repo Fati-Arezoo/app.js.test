@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: rgb(124, 124,124);
+}
+
+
+.container{
+    /* för att vara responsiv ska det vara min-height. om det behöver mer plats det ska få.*/
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.card{
+    min-height: 32rem;
+    /* flex-basis = width men det är mer responsiv och det är bra när man flex */
+    flex-basis: 30rem;
+    background-color: rgb(28, 50,161);
+    color:#fff;
+    padding: 1rem;
+}
+
+.card-title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.input-form{
+    margin-bottom: 2rem;
+}
+
+#input{
+    width: 100%;
+    height: 2rem;
+    padding: 1rem;
+    border:none;
+    background: royalblue;
+} 
+
+.list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .1rem solid orange;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+.item-text, .fas {
+    cursor: pointer;
+}
+
+.task-finished{
+    text-decoration: line-through;
+}
